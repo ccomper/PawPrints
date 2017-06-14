@@ -1,0 +1,37 @@
+.missing-page {
+  background-color: none;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+.missing-page__header {
+  color: gold;
+  text-align: center;
+}
+
+//overall list
+.missing-page__petList {
+  display: flex;
+  flex-direction: column;
+}
+
+//each li element
+.missing-page__petListItem {
+  width: 100%;
+}
+
+//each <p> tag in the li
+.missing-page__petItem {
+  color: gold;
+}
+
+
+
+.missing-page__petListItem img {
+  border-radius: 3px;
+  border: 1px solid gold;
+  height: auto;
+  width: 300px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}

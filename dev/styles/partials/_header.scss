@@ -1,0 +1,89 @@
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.top-header__title {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.top-header__logoImage {
+  height: 20px;
+  width: 20px;
+}
+
+.top-header__navMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  button {
+    border: 1px solid gold; 
+    margin: 5px;
+    border-radius: 3px;
+    transition-duration: 0.7s;
+    color: white;
+    padding: 6px;
+    background: none;
+    outline: none;
+  }
+}
+
+button:hover{
+      background-color: gold;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      padding-top: 2px;
+      padding-bottom: -2px;
+    }
+
+
+@media (max-width: 1200px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 710px) {
+  .top-header {
+    display: inline-block;
+  }
+  .top-header__logoImage {
+    // display: none;
+  }
+  .top-header__navMain {
+      margin-left: 0;
+  }
+    button:hover{
+      background-color: gold;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      padding-top: 6px;
+      padding-bottom: -2px;
+    }
+  
+}
+
+/* Landscape phones and down */
+@media (max-width: 530px) {
+  .top-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-header__title {
+    text-align: center;
+    margin-left: 15px;
+  }
+  .top-header__navMain {
+      flex-direction: column;
+  }
+  button:hover{
+      background-color: gold;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      padding-top: 6px;
+      padding-bottom: -2px;
+    }
+}

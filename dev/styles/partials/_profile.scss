@@ -1,0 +1,106 @@
+.profile-page {
+  margin: 0 auto;
+}
+
+.profile-page__header {
+  color: gold;
+}
+  
+.profile-page__listHeader {
+  color: gold;
+}
+
+.profile-page__entireForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-page__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.profile-page__form input {
+  background: none;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid gold; 
+}
+
+.profile-page__button {
+    border: 1px solid gold; 
+    margin: 5px;
+    border-radius: 3px;
+    color: white;
+    padding: 6px;
+    background: none;
+    outline: none;
+    transition: 0.6s;
+  }
+
+.profile-page__button:hover {
+    background-color: gold;
+}
+
+input[type=text] {
+  background-color: #1f262d;
+  color: white;
+  font-family: 'Gudea', sans-serif;
+}
+
+input.submitButton {
+  color: white;
+  border: 1px solid gold;
+  border-radius: 3px;
+  padding: 6px;
+  transition: 0.6s;
+  margin-top: 5px;
+}
+
+input.submitButton:hover {
+  background-color: gold;
+}
+
+.profile-page__listItem img {
+  border-radius: 3px;
+  border: 1px solid gold;
+  height: auto;
+  width: 300px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-page__uploadInput {
+  border: none;
+}
+
+.profile-page__listItemProp {
+  color: gold;
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  body{
+  background-attachment: fixed;
+  }
+  .profile-page__form {
+    width: 70%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .profile-page__header {
+    text-align: center;
+  }
+  .profile-page__form {
+    width: 70%;
+  }
+}
+
+
